@@ -1,11 +1,13 @@
 function staircase(n) {
     let staircase = "#";
-    let space = " ";
-    let result = "";
-    for (var i = 0; i < n; i++) {
-        result = result + staircase
+    for(let i = 1; i <= n; i++){
+        let result = "";
+        for(let j = 1; j <= n; j++){
+            if(j <= n - i) result += " ";
+            else result += "#" 
+        }
+        console.log(result)
     }
-    return result
 }
 
 console.log(staircase(4))
